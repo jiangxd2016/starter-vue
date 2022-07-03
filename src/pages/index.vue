@@ -1,11 +1,10 @@
 <script setup lang="ts">
-const name = $ref('')
+const name = $ref('');
 
-const router = useRouter()
+const router = useRouter();
 const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
-}
+  if (name) { router.push(`/hi/${encodeURIComponent(name)}`); }
+};
 </script>
 
 <template>
@@ -35,7 +34,7 @@ const go = () => {
       border="~ rounded gray-200 dark:gray-700"
       outline="none active:none"
       @keydown.enter="go"
-    >
+    />
 
     <div>
       <button
