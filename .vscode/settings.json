@@ -5,5 +5,19 @@
   },
   "files.associations": {
     "*.css": "postcss"
-  }
+  },
+  "cSpell.userWords": [
+    "esbuild",
+    "esno",
+    "estjs",
+    "iconify",
+    "unocss",
+    "unplugin",
+    "vite",
+    "vitejs",
+    "vitepress",
+    "vitest",
+    "vueuse"
+  ]
+  
 }
