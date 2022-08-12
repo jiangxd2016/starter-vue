@@ -1,49 +1,24 @@
-<script setup lang="ts">
-const name = $ref('');
-
-const router = useRouter();
-const go = () => {
-  if (name) { router.push(`/hi/${encodeURIComponent(name)}`); }
-};
-</script>
-
 <template>
-  <div>
-    <div i-carbon-campsite text-4xl inline-block />
-    <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse-lite" target="_blank">
-        Vitesse Lite
-      </a>
-    </p>
-    <p>
-      <em text-sm op75>Opinionated Vite Starter Template</em>
-    </p>
+  name: <input v-model="student.name" type="text" />
+  age: <input v-model="student.age" type="number" />
 
-    <div py-4 />
-
-    <input
-      id="input"
-      v-model="name"
-      placeholder="What's your name?"
-      type="text"
-      autocomplete="false"
-      p="x-4 y-2"
-      w="250px"
-      text="center"
-      bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
-      outline="none active:none"
-      @keydown.enter="go"
-    />
-
-    <div>
-      <button
-        class="m-3 text-sm btn"
-        :disabled="!name"
-        @click="go"
-      >
-        Go
-      </button>
-    </div>
-  </div>
+  <h2>{{ student.name }}</h2>
 </template>
+
+<script lang="ts" setup>
+import { reactive, watchEffect } from 'vue';
+
+const student = reactive({
+  name: '',
+  age: ''
+});
+watchEffect((oninvalidate) => {
+  oninvalidate(() => {
+    student.name = '张三';
+  });
+  console.log('name:', student.name);
+}, {
+  // pre 组件更新前； sync：强制效果始终同步； post：组件更新后执行
+  flush: 'post' // dom加载完毕后执行
+});
+</script>
