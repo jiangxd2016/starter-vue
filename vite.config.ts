@@ -7,7 +7,7 @@ import Pages from 'vite-plugin-pages';
 import Components from 'unplugin-vue-components/vite';
 import AutoImport from 'unplugin-auto-import/vite';
 import Unocss from 'unocss/vite';
-
+import Jsx from '@vitejs/plugin-vue-jsx';
 export default defineConfig({
   resolve: {
     alias: {
@@ -18,7 +18,7 @@ export default defineConfig({
     Vue({
       reactivityTransform: true,
     }),
-
+    Jsx(),
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),
 

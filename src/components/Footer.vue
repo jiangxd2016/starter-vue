@@ -7,7 +7,7 @@
     <a
       icon-btn i-carbon-logo-github
       rel="noreferrer"
-      href="https://github.com/jiangxd2016/vite-template"
+      href="https://github.com/antfu/vitesse-lite"
       target="_blank"
       title="GitHub"
     />
