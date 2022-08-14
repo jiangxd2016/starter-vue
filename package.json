@@ -7,7 +7,8 @@
     "lint": "eslint ./src --fix",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "test:watch": "vitest --watch"
   },
   "dependencies": {
     "@vueuse/core": "^9.1.0",
@@ -18,25 +19,21 @@
     "@estjs/eslint-config": "^0.3.4",
     "@estjs/tools": "^0.0.27",
     "@iconify-json/carbon": "^1.1.7",
-    "@types/node": "^18.7.2",
+    "@types/node": "^18.7.3",
     "@unocss/reset": "^0.45.6",
-    "@vitejs/plugin-vue": "^3.0.2",
+    "@vitejs/plugin-vue": "^3.0.3",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "@vue/test-utils": "^2.0.2",
-    "eslint": "^8.21.0",
-    "happy-dom": "^6.0.3",
+    "eslint": "^8.22.0",
     "jsdom": "^20.0.0",
-    "pnpm": "^7.9.0",
+    "pnpm": "^7.9.1",
     "typescript": "^4.7.4",
     "unocss": "^0.45.6",
     "unplugin-auto-import": "^0.11.1",
     "unplugin-vue-components": "^0.22.4",
-    "vite": "^3.0.6",
+    "vite": "^3.0.4",
     "vite-plugin-pages": "^0.25.0",
-    "vitest": "^0.21.1",
+    "vitest": "^0.21.0",
     "vue-tsc": "^0.40.1"
-  },
-  "eslintConfig": {
-    "extends": "@estjs/eslint-config"
   }
 }
