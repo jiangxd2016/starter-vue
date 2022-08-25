@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import Counter from '@/components/Counter';
 const name = $ref('');
+const IndexRef = ref<HTMLElement>();
+
+onMounted(()=>{
+  console.info(IndexRef.value?.innerHTML);
+
+});
 
 const router = useRouter();
 const go = () => {
@@ -9,7 +15,7 @@ const go = () => {
 </script>
 
 <template>
-  <div>
+  <div ref="IndexRef" class="wrapper">
     <div i-carbon-campsite text-4xl inline-block />
     <Counter />
     <p>
