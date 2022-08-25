@@ -19,7 +19,7 @@ export default defineConfig({
       reporter: ['text', 'json', 'html'],
     },
     globals: true,
-    environment: 'happy-dom',
+    environment: 'jsdom',
     watch: false
   },
 });
