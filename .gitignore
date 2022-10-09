@@ -7,3 +7,7 @@ dist-ssr
 node_modules
 .idea/
 *.log
+
+.eslintcache
+auto-imports.d.ts
+components.d.ts
