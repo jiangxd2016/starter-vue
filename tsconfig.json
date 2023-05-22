@@ -15,6 +15,7 @@
     "emitDecoratorMetadata": true,
     "strictNullChecks": true,
     "allowJs": true,
+    "jsxImportSource":"vue",
     "forceConsistentCasingInFileNames": true,
     "types": [
       "vite/client",
