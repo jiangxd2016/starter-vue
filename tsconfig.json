@@ -15,6 +15,7 @@
     "emitDecoratorMetadata": true,
     "strictNullChecks": true,
     "allowJs": true,
+    "checkJs": true,
     "jsxImportSource":"vue",
     "forceConsistentCasingInFileNames": true,
     "types": [
