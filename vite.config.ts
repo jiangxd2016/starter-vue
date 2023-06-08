@@ -8,6 +8,8 @@ import Components from 'unplugin-vue-components/vite';
 import AutoImport from 'unplugin-auto-import/vite';
 import Unocss from 'unocss/vite';
 import Jsx from '@vitejs/plugin-vue-jsx';
+import VueDevTools from 'vite-plugin-vue-devtools'
+
 export default defineConfig({
   resolve: {
     alias: {
@@ -15,9 +17,8 @@ export default defineConfig({
     },
   },
   plugins: [
-    Vue({
-      reactivityTransform: true,
-    }),
+    VueDevTools(),
+    Vue(),
     Jsx(),
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),

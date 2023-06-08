@@ -4,10 +4,13 @@
     <Footer />
   </main>
 </template>
-<script setup>
+<script setup lang="ts">
 import { effect } from 'vue';
 
 
+const props = withDefaults(defineProps<{aa:any}>(), {
+aa:null
+})
 const obj = reactive({ foo: 1 })
 const oth= reactive({bar:2})
     // watchEffect(() => {
