@@ -4,12 +4,6 @@
       <div i-carbon-sun dark:i-carbon-moon />
     </button>
 
-    <a
-      i-carbon-logo-github icon-btn
-      rel="noreferrer"
-      href=""
-      target="_blank"
-      title="GitHub"
-    />
+    <a i-carbon-logo-github icon-btn rel="noreferrer" href="" target="_blank" title="GitHub" />
   </nav>
 </template>

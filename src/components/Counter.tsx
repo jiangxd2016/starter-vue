@@ -1,5 +1,5 @@
 import type { PropType } from 'vue';
-import { defineComponent, ref, onMounted } from 'vue';
+import { defineComponent, onMounted, ref } from 'vue';
 import { useCounter } from '@vueuse/core';
 
 export default defineComponent({
@@ -15,10 +15,14 @@ export default defineComponent({
 
     return () => (
       <div ref={countRef}>
-        <button class="inc btn" onClick={() => inc()}>+</button>
+        <button class="inc btn" onClick={() => inc()}>
+          +
+        </button>
         <input type="text" class="text-center" v-model={count.value} />
-        <button class="dec btn" onClick={() => dec()} >-</button>
+        <button class="dec btn" onClick={() => dec()}>
+          -
+        </button>
       </div>
     );
-  }
+  },
 });
