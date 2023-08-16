@@ -12,9 +12,7 @@ export default defineComponent({
   setup(props) {
     const { count, inc, dec } = useCounter(props.initial);
     const countRef = ref<HTMLDivElement>();
-    onMounted(() => {
-      console.log(countRef.value);
-    });
+
     return () => (
       <div ref={countRef}>
         <button class="inc btn" onClick={() => inc()}>+</button>

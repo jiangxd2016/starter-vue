@@ -1,17 +1,16 @@
 <script setup lang="ts">
 import Counter from '@/components/Counter';
 
-const name = $ref('');
+const name = ref('');
 const IndexRef = ref<HTMLElement>();
 
 onMounted(()=>{
-  console.info(IndexRef.value?.innerHTML);
 
 });
 
 const router = useRouter();
 const go = () => {
-  if (name) { router.push(`/hi/${encodeURIComponent(name)}`); }
+  if (name) { router.push(`/hi/${encodeURIComponent(name.value)}`); }
 };
 </script>
 
