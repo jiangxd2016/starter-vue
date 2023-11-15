@@ -11,9 +11,6 @@ export default defineConfig({
   },
   plugins: [Vue(), Jsx()],
   test: {
-    transformMode: {
-      web: [/\.[jt]sx$/],
-    },
     coverage: {
       exclude: ['index.ts'],
       reporter: ['text', 'json', 'html'],

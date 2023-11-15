@@ -11,7 +11,7 @@ onMounted(() => {
 const router = useRouter();
 const go = () => {
   if (name.value) {
-    router.push(`/hi/${encodeURIComponent(name)}`);
+    router.push(`/hi/${encodeURIComponent(name.value)}`);
   }
 };
 </script>
