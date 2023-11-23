@@ -9,6 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Unocss from 'unocss/vite';
 import Jsx from '@vitejs/plugin-vue-jsx';
 import VueDevTools from 'vite-plugin-vue-devtools';
+import Inspect from 'vite-plugin-inspect'
 
 export default defineConfig({
   resolve: {
@@ -18,7 +19,9 @@ export default defineConfig({
   },
   plugins: [
     VueDevTools(),
-    Vue(),
+    Vue({
+      reactivityTransform:true
+    }),
     Jsx(),
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),
@@ -45,5 +48,7 @@ export default defineConfig({
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
     Unocss(),
+
+    Inspect()
   ],
 });
