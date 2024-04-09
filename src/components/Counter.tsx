@@ -1,6 +1,6 @@
-import type { PropType } from 'vue';
-import { defineComponent, onMounted, ref } from 'vue';
+import { defineComponent, ref } from 'vue';
 import { useCounter } from '@vueuse/core';
+import type { PropType } from 'vue';
 
 export default defineComponent({
   props: {
