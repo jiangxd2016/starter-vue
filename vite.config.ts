@@ -9,7 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Unocss from 'unocss/vite';
 import Jsx from '@vitejs/plugin-vue-jsx';
 import VueDevTools from 'vite-plugin-vue-devtools';
-import Inspect from 'vite-plugin-inspect'
+import Inspect from 'vite-plugin-inspect';
 
 export default defineConfig({
   resolve: {
@@ -27,7 +27,7 @@ export default defineConfig({
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       include: [
-        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+        /\.[jt]sx?$/, // .ts, .tsx, .js, .jsx
         /\.vue$/,
         /\.vue\?vue/, // .vue
         /\.md$/, // .md
@@ -47,6 +47,6 @@ export default defineConfig({
     // see unocss.config.ts for config
     Unocss(),
 
-    Inspect()
+    Inspect(),
   ],
 });
