@@ -7,7 +7,6 @@ dist-ssr
 node_modules
 .idea/
 *.log
-pnpm-lock.yaml
 
 .eslintcache
 auto-imports.d.ts
