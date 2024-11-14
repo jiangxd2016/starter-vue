@@ -18,5 +18,9 @@
     "vitepress",
     "vitest",
     "vueuse"
+  ],
+  "i18n-ally.localesPaths": [
+    "src/locale",
+    "src/locale/lang"
   ]
 }
