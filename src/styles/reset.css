@@ -1,0 +1,37 @@
+.arco-menu-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.arco-table-content .arco-btn-size-medium {
+  height: 24px !important;
+}
+
+.list-search-wrap .arco-form-layout-inline .arco-form-item {
+    width: 260px;
+  }
+
+
+webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition-delay: 99999s;
+  -webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
+}
+
+body {
+  --primary-5: 0, 179, 255;
+  --primary-6: 0, 162, 233;
+  --primary-7: 2, 134, 190;
+  --danger-5: 226, 72, 72;
+  --danger-6: 226, 72, 72;
+  --primary-7: 0, 162, 233;
+
+  --color-text-1:255, 255, 255;
+}
+
+
+
+.arco-spin-mask{
+  z-index: 100000000000;
+  background-color: rgba(0, 0, 0, 0.3);
+}
