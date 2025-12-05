@@ -7,7 +7,6 @@ import App from './App.vue';
 import '@unocss/reset/tailwind.css';
 import './styles/main.css';
 import 'uno.css';
-import { i18n } from './i18n';
 
 const app = createApp(App);
 const router = createRouter({
@@ -18,5 +17,4 @@ const pinia = createPinia();
 
 app.use(router);
 app.use(pinia);
-app.use(i18n);
 app.mount('#app');
